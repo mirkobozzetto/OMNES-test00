@@ -1,8 +1,8 @@
 services:
   app:
     build: .
-    ports:
-      - "${HOST_PORT:-3000}:3000"
+    expose:
+      - "3000"
     volumes:
       - sqlite-data:/app/packages/backend/prisma
     environment:
