@@ -1,0 +1,30 @@
+{
+  "name": "@student-app/backend",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc --noEmit",
+    "seed": "tsx prisma/seed.ts",
+    "migrate": "prisma migrate dev",
+    "studio": "prisma studio"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13",
+    "@prisma/adapter-better-sqlite3": "^7.5.0",
+    "@prisma/client": "^7.5.0",
+    "@student-app/shared": "workspace:*",
+    "hono": "^4.12.8",
+    "zod": "^3.24"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9",
+    "@types/node": "^25.5.0",
+    "prisma": "^7.5.0",
+    "tsx": "^4",
+    "typescript": "^5.7"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}

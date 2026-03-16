@@ -1,0 +1,25 @@
+{
+  "name": "student-management-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:frontend": "pnpm --filter @student-app/frontend dev",
+    "dev:backend": "pnpm --filter @student-app/backend dev",
+    "build": "pnpm -r build",
+    "seed": "pnpm --filter @student-app/backend seed",
+    "migrate": "pnpm --filter @student-app/backend migrate",
+    "studio": "pnpm --filter @student-app/backend studio"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "prisma",
+      "@prisma/engines",
+      "esbuild",
+      "better-sqlite3"
+    ]
+  }
+}

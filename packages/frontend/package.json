@@ -1,0 +1,30 @@
+{
+  "name": "@student-app/frontend",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2",
+    "react-dom": "^19.2",
+    "@tanstack/react-table": "^8.21.3",
+    "@tanstack/react-query": "^5",
+    "@dnd-kit/react": "^0.3.2",
+    "@student-app/shared": "workspace:*",
+    "zod": "^3.24",
+    "sonner": "^2",
+    "lucide-react": "^0.474"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0",
+    "@vitejs/plugin-react": "^4",
+    "typescript": "^5.7",
+    "tailwindcss": "^4",
+    "@tailwindcss/vite": "^4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
+  }
+}
