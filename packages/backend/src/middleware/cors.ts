@@ -1,7 +1,7 @@
 import { cors } from 'hono/cors'
 
 export const corsMiddleware = cors({
-  origin: 'http://localhost:5173',
+  origin: process.env.CORS_ORIGIN || '*',
   allowMethods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   allowHeaders: ['Content-Type'],
 })

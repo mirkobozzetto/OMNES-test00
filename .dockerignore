@@ -1,0 +1,9 @@
+node_modules
+.git
+*.db
+*.db-journal
+dist
+.DS_Store
+docs
+design-system.md
+.claude
